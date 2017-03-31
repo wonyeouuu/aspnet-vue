@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue4Mac", "Vue4Mac\Vue4Mac.csproj", "{9474B0F1-F3BB-4187-89E6-B6F73A7ED41E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue4Mac.Tests", "Vue4Mac.Tests\Vue4Mac.Tests.csproj", "{020A51CB-8437-42AB-8DCE-BED67624DC9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9474B0F1-F3BB-4187-89E6-B6F73A7ED41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9474B0F1-F3BB-4187-89E6-B6F73A7ED41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9474B0F1-F3BB-4187-89E6-B6F73A7ED41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9474B0F1-F3BB-4187-89E6-B6F73A7ED41E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{020A51CB-8437-42AB-8DCE-BED67624DC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020A51CB-8437-42AB-8DCE-BED67624DC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020A51CB-8437-42AB-8DCE-BED67624DC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020A51CB-8437-42AB-8DCE-BED67624DC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
