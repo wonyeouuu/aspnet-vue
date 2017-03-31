@@ -8,7 +8,7 @@ import Navigation from './Navigation.vue'
 export default {
   data() {
     return {
-      title: 'DEMO'
+      title: 'Demo'
     }
   },
   computed: {
@@ -43,7 +43,7 @@ export default {
 }
 .placeholder {
   width: 100%;
-  height: 56px;
+  height: 64px;
 }
 .is-full-width {
   width: 100%;

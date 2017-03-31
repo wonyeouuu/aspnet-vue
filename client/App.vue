@@ -6,7 +6,9 @@ export default {
     return (
       <div>
         <AppBar></AppBar>
-        <router-view></router-view>
+        <div class='content-wrapper'>
+          <router-view></router-view>
+        </div>
       </div>
     )
   }
