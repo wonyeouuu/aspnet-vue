@@ -1,5 +1,7 @@
 # Autosave files
 *~
+# include front-end code
+!/client
 
 # build
 [Oo]bj/

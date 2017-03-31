@@ -9,9 +9,10 @@ namespace Vue4Mac
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
 			routes.MapRoute(
 				name: "Default",
-				url: "{controller}/{action}/{id}",
+				url: "{*url}",//map all routes to HomeController@Index
 				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
 			);
 		}
