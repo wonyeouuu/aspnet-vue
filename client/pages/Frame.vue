@@ -1,9 +1,15 @@
 <script>
 import { mapGetters } from 'vuex'
+import urlMapping from '../config/urlMapping'
 
 export default {
+  props: {
+    title: String
+  },
   computed: {
-    ...mapGetters(['url'])
+    url() {
+      return urlMapping[this.title]
+    }
   },
   render(h) {
     return (

@@ -6,7 +6,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: {
     vendor: ['vue', 'vuex', 'vue-router'],
-    main: './main.js'
+    main: ['babel-polyfill', './main.js'],
   },
   output: {
     publicPath: '/Scripts/',

@@ -43,7 +43,7 @@ export default {
 }
 .placeholder {
   width: 100%;
-  height: 64px;
+  height: 56px;
 }
 .is-full-width {
   width: 100%;

@@ -2,6 +2,7 @@
 const Home = (resolve) => require(['../pages/Home.vue'], resolve)
 const Frame = (resolve) => require(['../pages/Frame.vue'], resolve)
 const Table = (resolve) => require(['../pages/Table.vue'], resolve)
+const RX = (resolve) => require(['../pages/RX.vue'], resolve)
 // sync load
 // import Home from '../pages/Home.vue'
 // import Frame from '../pages/Frame.vue'
@@ -15,7 +16,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
   },
   {
     path: '/table',
@@ -23,10 +24,16 @@ const routes = [
     component: Table,
   },
   {
-    path: '/frame',
+    path: '/frame/:title',
     name: 'frame',
-    component: Frame
+    component: Frame,
+    props: (route) => ({ title: route.params.title }),
   },
+  {
+    path: '/rx',
+    name: 'rx',
+    component: RX,
+  }
 ]
 
 export default routes

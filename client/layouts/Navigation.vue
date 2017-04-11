@@ -24,16 +24,27 @@ export default {
         {
           title: 'UDN',
           icon: 'http',
-          url: 'https://shopping.udn.com/mall/Cc1a00.do',
-          route: { name: 'frame' },
+          route: {
+            name: 'frame',
+            params: { title: 'udn' },
+          },
           subHeader: 'iframes'
         },
         {
           title: 'Momo',
           icon: 'http',
-          url: 'https://www.momoshop.com.tw/main/Main.jsp',
-          route: { name: 'frame' }
+          route: {
+            name: 'frame',
+            params: { title: 'momo' },
+          },
+          divider: true,
         },
+        // {
+        //   title: 'RX',
+        //   icon: 'loop',
+        //   route: { name: 'rx' },
+        //   subHeader: 'RX',
+        // }
       ]
     }
   },
@@ -56,21 +67,16 @@ export default {
   },
   methods: {
     onChangeHandler(list) {
-      this.$router.push({
-        name: list.route.name
-      })
-      if (list.route.name === 'frame') {
-        this.$store.dispatch('changeUrl', list.url)
-      }
+      this.$router.push(list.route)
     },
     renderListItem(list) {
       return (
         <div>
-          {list.hasOwnProperty('subHeader') && list.subHeader && <SubHeader>{list.subHeader}</SubHeader>}
+          {Object.hasOwnProperty.call(list, 'subHeader') && list.subHeader && <SubHeader>{list.subHeader}</SubHeader>}
           <ListItem title={list.title} value={list}>
             <Icon slot='left' value={list.icon} />
           </ListItem>
-          {list.hasOwnProperty('divider') && list.divider && <Divider />}
+          {Object.hasOwnProperty.call(list, 'divider') && list.divider && <Divider />}
         </div>
       )
     }
