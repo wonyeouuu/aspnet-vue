@@ -16,6 +16,16 @@ export default {
           route: { name: 'home' },
         },
         {
+          title: 'A',
+          icon: 'recycle',
+          route: { name: 'A' }
+        },
+        {
+          title: 'B',
+          icon: 'recycle',
+          route: { name: 'B' }
+        },
+        {
           title: 'Table',
           icon: 'grid_on',
           route: { name: 'table' },
