@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --config=./webpack.config.dev.js",
+    "dev": "cross-env NODE_ENV=development SERVER=node webpack-dev-server --hot --inline --config=./webpack.config.dev.js",
     "build": "cross-env NODE_ENV=development webpack --hide-modules --progress --color --config=./webpack.config.dev.js",
+    "node-build": "cross-env NODE_ENV=development SERVER=node webpack --hide-modules --progress --color --config=./webpack.config.dev.js",
     "production": "cross-env NODE_ENV=production webpack --hide-modules --progress --color --config=./webpack.config.prod.js",
-    "node-production": "cross-env NODE_ENV=production webpack --hide-modules --progress --color --config=./webpack.config.node.prod.js"
+    "node-production": "cross-env NODE_ENV=production SERVER=node webpack --hide-modules --progress --color --config=./webpack.config.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -22,9 +23,11 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-2": "^6.22.0",
+    "clean-webpack-plugin": "^0.1.16",
     "cross-env": "^3.2.4",
     "css-loader": "^0.27.3",
     "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.2",
     "optimize-css-assets-webpack-plugin": "^1.3.0",
@@ -34,7 +37,8 @@
     "vue-style-loader": "^2.0.5",
     "vue-template-compiler": "^2.2.6",
     "webpack": "^2.3.2",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
     "axios": "^0.15.3",

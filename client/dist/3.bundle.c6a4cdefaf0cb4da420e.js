@@ -1,2 +1,2 @@
 webpackJsonp([3],{405:function(e,n,l){l(563);var r=l(8)(l(553),null,null,null);e.exports=r.exports},553:function(e,n,l){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default={render:function(e){return e("div",{class:"garbage"},["Hello world!"])}}},563:function(e,n){}});
-//# sourceMappingURL=3.bundle.js.map
+//# sourceMappingURL=3.bundle.c6a4cdefaf0cb4da420e.js.map
