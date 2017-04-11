@@ -21,8 +21,8 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
           use: 'css-loader',
+          fallback: 'style-loader',
         })
       },
       {
@@ -67,7 +67,10 @@ module.exports = {
       }
     }),
 
-    new ExtractTextPlugin('style.bundle.css'),
+    new ExtractTextPlugin({
+      filename: 'style.bundle.css',
+      allChunks: true,// make sure lazy load components extract css
+    }),
 
     new OptimizeCssAssetsPlugin(),
 

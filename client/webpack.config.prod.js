@@ -67,7 +67,10 @@ module.exports = {
       }
     }),
 
-    new ExtractTextPlugin('style.bundle.css'),
+    new ExtractTextPlugin({
+      filename: 'style.bundle.css',
+      allChunks: true,// make sure lazy load components extract css
+    }),
 
     new OptimizeCssAssetsPlugin(),
 
