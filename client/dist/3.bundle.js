@@ -1,0 +1,2 @@
+webpackJsonp([3],{410:function(e,l,n){var u=n(8)(n(556),null,null,null);e.exports=u.exports},556:function(e,l,n){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),l.default={render:function(e){return e("div",null,["Hello world!"])}}}});
+//# sourceMappingURL=3.bundle.js.map

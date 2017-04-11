@@ -21,24 +21,32 @@ export default {
           route: { name: 'table' },
           divider: true,
         },
-        {
-          title: 'UDN',
-          icon: 'http',
-          route: {
-            name: 'frame',
-            params: { title: 'udn' },
-          },
-          subHeader: 'iframes'
-        },
-        {
-          title: 'Momo',
-          icon: 'http',
-          route: {
-            name: 'frame',
-            params: { title: 'momo' },
-          },
-          divider: true,
-        },
+        // {
+        //   title: 'UDN',
+        //   icon: 'http',
+        //   route: {
+        //     name: 'frame',
+        //     params: { title: 'udn' },
+        //   },
+        //   subHeader: 'iframes'
+        // },
+        // {
+        //   title: 'Momo',
+        //   icon: 'http',
+        //   route: {
+        //     name: 'frame',
+        //     params: { title: 'momo' },
+        //   },
+        // },
+        // {
+        //   title: 'Shopee',
+        //   icon: 'http',
+        //   route: {
+        //     name: 'frame',
+        //     params: { title: 'shopee' },
+        //   },
+        //   divider: true,
+        // },
         // {
         //   title: 'RX',
         //   icon: 'loop',

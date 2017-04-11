@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash/cloneDeep'
+import cloneDeep from 'lodash/cloneDeep'
 const KEY = 'TABLE_DATA'
 
 const data = [
